@@ -1,0 +1,46 @@
+/* yesokay. web TOKENLARI: TEK YER. Değerler uygulamayla AYNI (src/tema.ts PALET / ORB). Başka dosyada sabit renk yazılmaz.
+   Lavanta / çivit SADECE küre ve halesi için; arayüz kromu sıcak tokenlarla (fildişi, vanilya). Pembe düğme / yazı YOK. */
+:root {
+  /* zemin ve yüzey */
+  --zemin: #15192A;
+  --zemin-derin: #101321;
+  --yuzey: #23243E;
+  --ayirac: #423B57;
+  /* yazı */
+  --yazi: #FCE8E3;
+  --yazi-ikincil: #ABA9C4;
+  --toz-leylak: #CDC4DC;
+  /* sıcak vurgu (bağlantı, odak) */
+  --vanilya: #FFF1D5;
+  --gul: #F2C1CD;
+  /* küre */
+  --ruya-leylak: #9887CB;
+  --civit: #575B9F;
+  --leylak-isik: #C8A2F6;
+  --kure-gradyan: radial-gradient(52% 52% at 35% 28%, #FFF1D5 0%, #F2C1CD 30%, #9887CB 75%, #575B9F 100%);
+  --kure-hale: 0 0 48px rgba(200, 162, 246, 0.20), 0 0 120px rgba(200, 162, 246, 0.10);
+  --kure-nefes: 5s;
+  --kure-nefes-olcek: 1.045;
+  /* illüstrasyonlar: analog kâğıt + soyut "fotoğraf" (pencereden sıcak ışık; nesne, insan, yazı yok) */
+  --kagit: #F3E9DC;
+  --murekkep: #74655F;
+  --kagit-cizgi: rgba(116, 101, 95, 0.35);
+  --kagit-golge: 0 22px 48px rgba(8, 10, 18, 0.55), 0 2px 6px rgba(8, 10, 18, 0.35);
+  --foto-zemin: linear-gradient(165deg, #6E5A66 0%, #A27F7E 38%, #C9A189 66%, #7A6061 100%);
+  --foto-isik: linear-gradient(118deg, rgba(255, 241, 213, 0) 22%, rgba(255, 241, 213, 0.55) 36%, rgba(255, 241, 213, 0.12) 46%, rgba(255, 241, 213, 0.42) 58%, rgba(255, 241, 213, 0) 74%), radial-gradient(70% 55% at 24% 16%, rgba(255, 241, 213, 0.85), rgba(255, 241, 213, 0) 72%), radial-gradient(80% 45% at 72% 92%, rgba(242, 193, 205, 0.34), rgba(242, 193, 205, 0) 70%);
+  /* illüstrasyonlar: gece gökyüzü. Lavanta SADECE takımyıldız çizgisinde */
+  --gokyuzu-gradyan: linear-gradient(180deg, #101526 0%, #15192A 100%);
+  --takim-cizgi: #C8A2F6;
+  /* yazı tipleri */
+  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  /* yerleşim */
+  --genislik: 1120px;
+  --kenar: clamp(20px, 5vw, 40px);
+  --bolum: clamp(40px, 7vw, 100px);
+  color-scheme: dark;
+}
+:root {
+  /* demo: basınca küre arkasında beliren yumuşak ışık (lavanta SADECE küre ve halesi) */
+  --kure-hale-isik: radial-gradient(closest-side, rgba(200, 162, 246, 0.42), rgba(200, 162, 246, 0));
+}
